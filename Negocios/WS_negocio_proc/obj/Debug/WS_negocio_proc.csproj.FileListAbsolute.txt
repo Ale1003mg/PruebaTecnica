@@ -54,11 +54,8 @@ C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\roslyn\VB
 C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\WS_Negocios.dll
-C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\WS_Negocios_clases.dll
 C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\WS_Negocios.pdb
 C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\WS_Negocios.dll.config
-C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\WS_Negocios_clases.pdb
-C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\WS_Negocios_clases.dll.config
 C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\obj\Debug\WS_negocio_proc.csproj.CopyComplete
 C:\Users\Alejandro\Desktop\Prueba Tecnica\Negocios\WS_negocio_proc\obj\Debug\WS_negocio_proc.dll

@@ -69,44 +69,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WS_Datos\Datos.disco" />
-    <None Include="Connected Services\WS_Datos\configuration91.svcinfo" />
-    <None Include="Connected Services\WS_Datos\configuration.svcinfo" />
-    <None Include="Connected Services\WS_Datos\Reference.svcmap">
+    <None Include="Connected Services\WS_Datos_User\Datos.disco" />
+    <None Include="Connected Services\WS_Datos_User\configuration91.svcinfo" />
+    <None Include="Connected Services\WS_Datos_User\configuration.svcinfo" />
+    <None Include="Connected Services\WS_Datos_User\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Web.config" />
-    <Content Include="Connected Services\WS_Datos\WS_Negocios.WS_Datos.BuscarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\WS_Datos\WS_Negocios.WS_Datos.EliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\WS_Datos\WS_Negocios.WS_Datos.insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\WS_Datos\WS_Negocios.WS_Datos.modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\WS_Datos\WS_Negocios.WS_Datos.MostrarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\WS_Datos\WS_Negocios.WS_Datos.Usuario.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\WS_Datos\Reference.cs">
+    <Compile Include="Connected Services\WS_Datos_User\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="pruebas.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WS_Datos\Datos.wsdl" />
+    <None Include="Connected Services\WS_Datos_User\Datos.wsdl" />
+    <Content Include="Connected Services\WS_Datos_User\WS_Negocios.WS_Datos_User.BuscarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_Datos_User\WS_Negocios.WS_Datos_User.EliminarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_Datos_User\WS_Negocios.WS_Datos_User.insertarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_Datos_User\WS_Negocios.WS_Datos_User.modificarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_Datos_User\WS_Negocios.WS_Datos_User.MostrarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WS_Datos_User\WS_Negocios.WS_Datos_User.Personas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -119,7 +118,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\WS_Datos\" />
+    <WCFMetadataStorage Include="Connected Services\WS_Datos_User\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

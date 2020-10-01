@@ -4,8 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using WS_negocio_proc.Procedimientos;
-using WS_Negocios.WS_Datos;
-using WS_Negocios_clases.Clases;
+using WS_Negocios.WS_Datos_User;
+
+//using WS_Negocios_clases.Clases;
 
 namespace WS_negocios_WebServes
 {
@@ -22,14 +23,14 @@ namespace WS_negocios_WebServes
 
         Conexiones_Procedimientos procesos = new Conexiones_Procedimientos();
         [WebMethod]
-        public string Insertar(Usuario personas) { return procesos.Insertar(personas); }
+        public string Insertar(Personas personas) { return procesos.Insertar(personas); }
         [WebMethod]
-        public string Modificar(Usuario personas) { return procesos.Modificar(personas); }
+        public string Modificar(Personas personas) { return procesos.Modificar(personas); }
         [WebMethod]
         public string Eliminar(int id) { return procesos.Eliminar(id); }
         [WebMethod]
-        public List<Usuario> Buscar(int id) {  return procesos.Buscar(id); }
+        public List<Personas> Buscar(int id) {  return procesos.Buscar(id); }
         [WebMethod]
-        public List<Usuario> Mostrar() { return procesos.index(); }
+        public List<Personas> Mostrar() { return procesos.index(); }
     }
 }

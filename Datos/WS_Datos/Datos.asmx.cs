@@ -23,14 +23,14 @@ namespace WS_Datos
 
         //Insertar
         [WebMethod]
-        public string insertar(Usuario personas)
+        public string insertar(Personas personas)
         {
             return Mante.insertar(personas);
 
         }
         ////Modificar
         [WebMethod]
-        public string modificar(Usuario personas)
+        public string modificar(Personas personas)
         {
             return Mante.Modificar(personas);
 
@@ -45,7 +45,7 @@ namespace WS_Datos
 
         //Modificar
         [WebMethod]
-        public List<Usuario> Mostrar()
+        public List<Personas> Mostrar()
         {
             return Mante.mostrar();
 
@@ -53,7 +53,7 @@ namespace WS_Datos
 
         //Buscar
         [WebMethod]
-        public List<Usuario> Buscar(int id)
+        public List<Personas> Buscar(int id)
         {
             return Mante.Buscar(id);
 

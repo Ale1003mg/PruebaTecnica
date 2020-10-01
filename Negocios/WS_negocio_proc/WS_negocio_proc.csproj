@@ -88,10 +88,6 @@
       <Project>{0f7ae475-6821-455c-9c82-d28f6e2b5c64}</Project>
       <Name>WS_Negocios</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WS_Negocios_clases\WS_Negocios_clases.csproj">
-      <Project>{ee6e1b13-0c0a-4fe8-b44d-bae9739766b2}</Project>
-      <Name>WS_Negocios_clases</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

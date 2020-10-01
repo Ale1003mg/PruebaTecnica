@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using WS_Negocios;
-using WS_Negocios.WS_Datos;
-//using WS_Negocios.WS_Datos;
-using WS_Negocios_clases;
-using WS_Negocios_clases.Clases;
+using WS_Negocios.WS_Datos_User;
+
 
 namespace WS_negocio_proc.Procedimientos
 {
@@ -14,9 +12,11 @@ namespace WS_negocio_proc.Procedimientos
     {
 
         DatosSoapClient datos = new DatosSoapClient();
+       
+
 
         //Insertar
-        public string Insertar(Usuario personas) {
+        public string Insertar(Personas personas) {
             try
             {
               
@@ -30,7 +30,7 @@ namespace WS_negocio_proc.Procedimientos
         }
         //Modificar
 
-        public string Modificar(Usuario personas)
+        public string Modificar(Personas personas)
         {
             try
             {
@@ -57,14 +57,14 @@ namespace WS_negocio_proc.Procedimientos
             }
         }
         //Buscar
-        public List<Usuario> Buscar(int id )
+        public List<Personas> Buscar(int id )
         {
             try
             {
                 var aux = datos.Buscar(id);
 
-                List<Usuario> dato = new List<Usuario>();
-                foreach (Usuario item in aux)
+                List<Personas> dato = new List<Personas>();
+                foreach (Personas item in aux)
                 {
                     dato.Add(item);
                 }
@@ -78,14 +78,15 @@ namespace WS_negocio_proc.Procedimientos
         }
         //Mostrar
 
-        public  List<Usuario> index()
+        public  List<Personas> index()
         {
             try
             {
+               
                 var aux = datos.Mostrar();
 
-                List<Usuario> dato = new List<Usuario>();
-                foreach (Usuario item in aux)
+                List<Personas> dato = new List<Personas>();
+                foreach (Personas item in aux)
                 {
                     dato.Add(item);
                 }
