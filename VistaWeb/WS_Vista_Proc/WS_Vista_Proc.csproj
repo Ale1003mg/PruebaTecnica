@@ -92,9 +92,6 @@
     <Content Include="Connected Services\WS_Negocios\WS_Vista_Proc.WS_Negocios.MostrarResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Connected Services\WS_Negocios\WS_Vista_Proc.WS_Negocios.Usuario.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connected Services\WS_Negocios\Reference.cs">
@@ -107,6 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\WS_Negocios\NegociosUsu.wsdl" />
+    <Content Include="Connected Services\WS_Negocios\WS_Vista_Proc.WS_Negocios.Personas.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

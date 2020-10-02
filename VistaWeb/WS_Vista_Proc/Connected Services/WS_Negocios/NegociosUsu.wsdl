@@ -5,15 +5,15 @@
       <s:element name="Insertar">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="personas" type="tns:Usuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="personas" type="tns:Personas" />
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:complexType name="Usuario">
+      <s:complexType name="Personas">
         <s:sequence>
           <s:element minOccurs="0" maxOccurs="1" name="ExtensionData" type="tns:ExtensionDataObject" />
-          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
-          <s:element minOccurs="1" maxOccurs="1" name="ID_Usuario" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID_Usuarios" type="s:int" />
           <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="Apellidos" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="Correo" type="s:string" />
@@ -31,7 +31,7 @@
       <s:element name="Modificar">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="personas" type="tns:Usuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="personas" type="tns:Personas" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -66,13 +66,13 @@
       <s:element name="BuscarResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="BuscarResult" type="tns:ArrayOfUsuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarResult" type="tns:ArrayOfPersonas" />
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:complexType name="ArrayOfUsuario">
+      <s:complexType name="ArrayOfPersonas">
         <s:sequence>
-          <s:element minOccurs="0" maxOccurs="unbounded" name="Usuario" nillable="true" type="tns:Usuario" />
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Personas" nillable="true" type="tns:Personas" />
         </s:sequence>
       </s:complexType>
       <s:element name="Mostrar">
@@ -81,7 +81,7 @@
       <s:element name="MostrarResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="MostrarResult" type="tns:ArrayOfUsuario" />
+            <s:element minOccurs="0" maxOccurs="1" name="MostrarResult" type="tns:ArrayOfPersonas" />
           </s:sequence>
         </s:complexType>
       </s:element>

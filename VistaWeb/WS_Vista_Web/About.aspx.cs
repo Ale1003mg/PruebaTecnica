@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
-using WS_Vista_Clases.Models;
+//using WS_Vista_Clases.Models;
 using WS_Vista_Proc;
 using WS_Vista_Proc.WS_Negocios;
 
@@ -34,10 +34,10 @@ namespace WS_Vista_Web
         protected void BtGuardar_Click(object sender, EventArgs e)//Guardar
         {
 
-            Usuario personas = new Usuario();
+            Personas personas = new Personas();
 
-            personas.id =0;
-            personas.ID_Usuario =Convert.ToInt32(ID_Usuario.Text);
+            personas.ID =0;
+            personas.ID_Usuarios =Convert.ToInt32(ID_Usuario.Text);
             personas.Nombre =Nombre.Text;
             personas.Apellidos =Apellidos.Text;
             personas.Correo = Correo.Text;
@@ -50,10 +50,10 @@ namespace WS_Vista_Web
 
         protected void BtModificar_Click(object sender, EventArgs e)//Modificar
         {
-            Usuario personas = new Usuario();
+            Personas personas = new Personas();
 
-            personas.id = Convert.ToInt32(ID.Text);
-            personas.ID_Usuario = Convert.ToInt32(ID_Usuario.Text);
+            personas.ID = Convert.ToInt32(ID.Text);
+            personas.ID_Usuarios = Convert.ToInt32(ID_Usuario.Text);
             personas.Nombre = Nombre.Text;
             personas.Apellidos = Apellidos.Text;
             personas.Correo = Correo.Text;

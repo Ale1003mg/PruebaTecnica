@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI.WebControls.WebParts;
-using WS_Vista_Clases.Models;
+//using WS_Vista_Clases.Models;
 using WS_Vista_Proc.WS_Negocios;
 
 namespace WS_Vista_Proc
@@ -16,7 +16,7 @@ namespace WS_Vista_Proc
         
 
         //insertar
-        public string Insert(Usuario personas) {
+        public string Insert(Personas personas) {
 
             try
             {
@@ -31,7 +31,7 @@ namespace WS_Vista_Proc
         }
 
         // Modificar
-        public string Modificar(Usuario personas) {
+        public string Modificar(Personas personas) {
 
             try
             {
@@ -60,13 +60,13 @@ namespace WS_Vista_Proc
         }
         //Buscar
 
-        public List<Usuario> Buscar(int id) {
+        public List<Personas> Buscar(int id) {
             try
             {
                 var aux = client.Buscar(id);
 
-                List<Usuario> dato = new List<Usuario>();
-                foreach (Usuario item in aux)
+                List<Personas> dato = new List<Personas>();
+                foreach (Personas item in aux)
                 {
                     dato.Add(item);
                 }
@@ -81,13 +81,13 @@ namespace WS_Vista_Proc
         }
 
         //Mostrar
-        public List<Usuario> Mostrar() {
+        public List<Personas> Mostrar() {
             try
             {
                 var aux = client.Mostrar();
 
-                List<Usuario> dato = new List<Usuario>();
-                foreach (Usuario item in aux)
+                List<Personas> dato = new List<Personas>();
+                foreach (Personas item in aux)
                 {
                     dato.Add(item);
                 }

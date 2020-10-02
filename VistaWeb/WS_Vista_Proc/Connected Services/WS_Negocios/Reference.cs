@@ -15,9 +15,9 @@ namespace WS_Vista_Proc.WS_Negocios {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Usuario", Namespace="http://tempuri.org/")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Personas", Namespace="http://tempuri.org/")]
     [System.SerializableAttribute()]
-    public partial class Usuario : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class Personas : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -25,9 +25,9 @@ namespace WS_Vista_Proc.WS_Negocios {
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private WS_Vista_Proc.WS_Negocios.ExtensionDataObject ExtensionData1Field;
         
-        private int idField;
+        private int IDField;
         
-        private int ID_UsuarioField;
+        private int ID_UsuariosField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NombreField;
@@ -65,32 +65,32 @@ namespace WS_Vista_Proc.WS_Negocios {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int id {
+        public int ID {
             get {
-                return this.idField;
+                return this.IDField;
             }
             set {
-                if ((this.idField.Equals(value) != true)) {
-                    this.idField = value;
-                    this.RaisePropertyChanged("id");
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=2)]
-        public int ID_Usuario {
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int ID_Usuarios {
             get {
-                return this.ID_UsuarioField;
+                return this.ID_UsuariosField;
             }
             set {
-                if ((this.ID_UsuarioField.Equals(value) != true)) {
-                    this.ID_UsuarioField = value;
-                    this.RaisePropertyChanged("ID_Usuario");
+                if ((this.ID_UsuariosField.Equals(value) != true)) {
+                    this.ID_UsuariosField = value;
+                    this.RaisePropertyChanged("ID_Usuarios");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
         public string Nombre {
             get {
                 return this.NombreField;
@@ -245,12 +245,12 @@ namespace WS_Vista_Proc.WS_Negocios {
     public partial class InsertarRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WS_Vista_Proc.WS_Negocios.Usuario personas;
+        public WS_Vista_Proc.WS_Negocios.Personas personas;
         
         public InsertarRequestBody() {
         }
         
-        public InsertarRequestBody(WS_Vista_Proc.WS_Negocios.Usuario personas) {
+        public InsertarRequestBody(WS_Vista_Proc.WS_Negocios.Personas personas) {
             this.personas = personas;
         }
     }
@@ -313,12 +313,12 @@ namespace WS_Vista_Proc.WS_Negocios {
     public partial class ModificarRequestBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WS_Vista_Proc.WS_Negocios.Usuario personas;
+        public WS_Vista_Proc.WS_Negocios.Personas personas;
         
         public ModificarRequestBody() {
         }
         
-        public ModificarRequestBody(WS_Vista_Proc.WS_Negocios.Usuario personas) {
+        public ModificarRequestBody(WS_Vista_Proc.WS_Negocios.Personas personas) {
             this.personas = personas;
         }
     }
@@ -483,12 +483,12 @@ namespace WS_Vista_Proc.WS_Negocios {
     public partial class BuscarResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WS_Vista_Proc.WS_Negocios.Usuario[] BuscarResult;
+        public WS_Vista_Proc.WS_Negocios.Personas[] BuscarResult;
         
         public BuscarResponseBody() {
         }
         
-        public BuscarResponseBody(WS_Vista_Proc.WS_Negocios.Usuario[] BuscarResult) {
+        public BuscarResponseBody(WS_Vista_Proc.WS_Negocios.Personas[] BuscarResult) {
             this.BuscarResult = BuscarResult;
         }
     }
@@ -544,12 +544,12 @@ namespace WS_Vista_Proc.WS_Negocios {
     public partial class MostrarResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WS_Vista_Proc.WS_Negocios.Usuario[] MostrarResult;
+        public WS_Vista_Proc.WS_Negocios.Personas[] MostrarResult;
         
         public MostrarResponseBody() {
         }
         
-        public MostrarResponseBody(WS_Vista_Proc.WS_Negocios.Usuario[] MostrarResult) {
+        public MostrarResponseBody(WS_Vista_Proc.WS_Negocios.Personas[] MostrarResult) {
             this.MostrarResult = MostrarResult;
         }
     }
@@ -586,7 +586,7 @@ namespace WS_Vista_Proc.WS_Negocios {
             return base.Channel.Insertar(request);
         }
         
-        public string Insertar(WS_Vista_Proc.WS_Negocios.Usuario personas) {
+        public string Insertar(WS_Vista_Proc.WS_Negocios.Personas personas) {
             WS_Vista_Proc.WS_Negocios.InsertarRequest inValue = new WS_Vista_Proc.WS_Negocios.InsertarRequest();
             inValue.Body = new WS_Vista_Proc.WS_Negocios.InsertarRequestBody();
             inValue.Body.personas = personas;
@@ -599,7 +599,7 @@ namespace WS_Vista_Proc.WS_Negocios {
             return base.Channel.InsertarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WS_Vista_Proc.WS_Negocios.InsertarResponse> InsertarAsync(WS_Vista_Proc.WS_Negocios.Usuario personas) {
+        public System.Threading.Tasks.Task<WS_Vista_Proc.WS_Negocios.InsertarResponse> InsertarAsync(WS_Vista_Proc.WS_Negocios.Personas personas) {
             WS_Vista_Proc.WS_Negocios.InsertarRequest inValue = new WS_Vista_Proc.WS_Negocios.InsertarRequest();
             inValue.Body = new WS_Vista_Proc.WS_Negocios.InsertarRequestBody();
             inValue.Body.personas = personas;
@@ -611,7 +611,7 @@ namespace WS_Vista_Proc.WS_Negocios {
             return base.Channel.Modificar(request);
         }
         
-        public string Modificar(WS_Vista_Proc.WS_Negocios.Usuario personas) {
+        public string Modificar(WS_Vista_Proc.WS_Negocios.Personas personas) {
             WS_Vista_Proc.WS_Negocios.ModificarRequest inValue = new WS_Vista_Proc.WS_Negocios.ModificarRequest();
             inValue.Body = new WS_Vista_Proc.WS_Negocios.ModificarRequestBody();
             inValue.Body.personas = personas;
@@ -624,7 +624,7 @@ namespace WS_Vista_Proc.WS_Negocios {
             return base.Channel.ModificarAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WS_Vista_Proc.WS_Negocios.ModificarResponse> ModificarAsync(WS_Vista_Proc.WS_Negocios.Usuario personas) {
+        public System.Threading.Tasks.Task<WS_Vista_Proc.WS_Negocios.ModificarResponse> ModificarAsync(WS_Vista_Proc.WS_Negocios.Personas personas) {
             WS_Vista_Proc.WS_Negocios.ModificarRequest inValue = new WS_Vista_Proc.WS_Negocios.ModificarRequest();
             inValue.Body = new WS_Vista_Proc.WS_Negocios.ModificarRequestBody();
             inValue.Body.personas = personas;
@@ -661,7 +661,7 @@ namespace WS_Vista_Proc.WS_Negocios {
             return base.Channel.Buscar(request);
         }
         
-        public WS_Vista_Proc.WS_Negocios.Usuario[] Buscar(int id) {
+        public WS_Vista_Proc.WS_Negocios.Personas[] Buscar(int id) {
             WS_Vista_Proc.WS_Negocios.BuscarRequest inValue = new WS_Vista_Proc.WS_Negocios.BuscarRequest();
             inValue.Body = new WS_Vista_Proc.WS_Negocios.BuscarRequestBody();
             inValue.Body.id = id;
@@ -686,7 +686,7 @@ namespace WS_Vista_Proc.WS_Negocios {
             return base.Channel.Mostrar(request);
         }
         
-        public WS_Vista_Proc.WS_Negocios.Usuario[] Mostrar() {
+        public WS_Vista_Proc.WS_Negocios.Personas[] Mostrar() {
             WS_Vista_Proc.WS_Negocios.MostrarRequest inValue = new WS_Vista_Proc.WS_Negocios.MostrarRequest();
             inValue.Body = new WS_Vista_Proc.WS_Negocios.MostrarRequestBody();
             WS_Vista_Proc.WS_Negocios.MostrarResponse retVal = ((WS_Vista_Proc.WS_Negocios.NegociosUsuSoap)(this)).Mostrar(inValue);
